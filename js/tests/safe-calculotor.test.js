@@ -1,4 +1,10 @@
+const SafeCalculator  = require('../safe-calculator');
+
 test('should not throw when authorized', () => {
-  // TODO: write a test that fails due to the bug in
-  // SafeCalculator.add()
+
+  const authorizer = {
+    authorize: () => true
+  }
+  const calculator = new SafeCalculator(authorizer)
+    calculator.add(1, 2)
 })
