@@ -31,7 +31,7 @@ class MailSender {
       return nextTry
     } else {
       return response
-    }
+    } 
   }
 }
 
